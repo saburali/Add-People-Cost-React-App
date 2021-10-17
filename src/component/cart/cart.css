@@ -6,9 +6,8 @@
 .cart .card {
     padding: 20px;
     overflow: hidden;
-    border-radius: 7px;
     background-color: #fff;
-    box-shadow: 0 3px 6px rgba(52, 152, 219, 0.30), 0 3px 6px rgba(52, 152, 219, 0.23);
+    border: 2px solid #3498db;
 }
 
 .cart .card h2 {
