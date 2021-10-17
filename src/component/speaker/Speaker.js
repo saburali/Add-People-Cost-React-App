@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './speaker.css';
 import SingleSpeaker from "../singleSpeaker/SingleSpeaker";
+import Cart from "../cart/Cart";
 
 const Speaker = () => {
 
@@ -20,15 +21,18 @@ const Speaker = () => {
     };
 
     return (
-        <div className="speakers">
-            {speaker.map((speaker) => (
-                <SingleSpeaker
-                    speaker={speaker}
-                    handleCart={handleCart}
-                    key={speaker.key}
-                >
-                </SingleSpeaker>
-            ))}
+        <div className="app-container">
+            <div className="speakers">
+                {speaker.map((speaker) => (
+                    <SingleSpeaker
+                        speaker={speaker}
+                        handleCart={handleCart}
+                        key={speaker.key}
+                    >
+                    </SingleSpeaker>
+                ))}
+            </div>
+            <Cart cart={cart}></Cart>
         </div>
     );
 };

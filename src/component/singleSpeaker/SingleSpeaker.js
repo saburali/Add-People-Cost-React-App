@@ -34,7 +34,7 @@ const SingleSpeaker = (props) => {
                     </div>
                 </div>
                 <div className="media">
-                    <h2 className="align-self-center mr-3 price" title=""> $65446 </h2>
+                    <h2 className="align-self-center mr-3 price" title=""> ${Salary} </h2>
                     <div className="media-body">
                         <div style={{width: '90px', textAlign: 'left'}}>
                             <p className="themeLetter" title="Sex"> {gender} </p>
