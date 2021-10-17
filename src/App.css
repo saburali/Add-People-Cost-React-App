@@ -2,8 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,300;0,500;0,600;0,700;0,800;0,900;1,400');
 
 :root {
-    --themeColor: #3498db;
+    --themeColor: rgb(52, 152, 219);
     --themeDhak: #1e7fc0;
+    --themeColorOpacity: #3498DB80;
 }
 
 body {
