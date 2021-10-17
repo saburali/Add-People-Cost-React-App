@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import './speaker.css';
-import {AiOutlineShoppingCart} from "react-icons/all";
 import SingleSpeaker from "../singleSpeaker/SingleSpeaker";
 
 const Speaker = () => {
@@ -23,12 +22,12 @@ const Speaker = () => {
     return (
         <div className="speakers">
             {speaker.map((speaker) => (
-                <SingleSpeakern
-                    person={speaker}
+                <SingleSpeaker
+                    speaker={speaker}
                     handleCart={handleCart}
                     key={speaker.key}
                 >
-                </SingleSpeakern>
+                </SingleSpeaker>
             ))}
         </div>
     );

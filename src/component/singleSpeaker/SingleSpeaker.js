@@ -2,19 +2,22 @@ import React from 'react';
 import './singleSpeaker.css';
 import {AiOutlineShoppingCart} from "react-icons/all";
 
-const SingleSpeaker = () => {
+const SingleSpeaker = (props) => {
+
+    // Destructuring Person
+    const { age, name, position, email, gender, phone, birthday, Salary, address, photo } = props.speaker;
+
     return (
         <div className="card mb-4">
             <div className="img-container">
-                <img src="https://pro-img.saburali.me/programming-hero/tech-conference/01.jpg" className=""
-                     alt=""/>
+                <img src={photo} className="" alt=""/>
             </div>
             <div className="card-body">
                 <p className="mb-1 position" title="">
                     Position:
-                    <span className="themeLetter"> Founder </span>
+                    <span className="themeLetter"> {position} </span>
                 </p>
-                <h5 className="card-title themeLetter" title=""> Troy Jimene </h5>
+                <h5 className="card-title themeLetter" title={name}> {name} </h5>
                 <div className="contact">
 
                     <div className="props">
@@ -24,22 +27,22 @@ const SingleSpeaker = () => {
                         <h5 className="themeLetter card-contact"> Email -  </h5>
                     </div>
                     <div>
-                        <h5 className="card-contact themeLetter" title=""> 12/5/1982 </h5>
-                        <h5 className="card-contact themeLetter" title=""> (500)-242-4394 </h5>
-                        <h5 className="card-contact themeLetter" title=""> 6172 Mcgowen St </h5>
-                        <h5 className="card-contact themeLetter" title=""> troy.jimenez@saburbd.com </h5>
+                        <h5 className="card-contact themeLetter" title={birthday}> {birthday} </h5>
+                        <h5 className="card-contact themeLetter" title={phone}> {phone} </h5>
+                        <h5 className="card-contact themeLetter" title={address}> {address} </h5>
+                        <h5 className="card-contact themeLetter" title={email}> {email} </h5>
                     </div>
                 </div>
                 <div className="media">
                     <h2 className="align-self-center mr-3 price" title=""> $65446 </h2>
                     <div className="media-body">
                         <div style={{width: '90px', textAlign: 'left'}}>
-                            <p className="themeLetter" title="Sex"> Male </p>
-                            <p className="themeLetter" style={{marginBottom: '0'}} title="Age"> Age: 22 </p>
+                            <p className="themeLetter" title="Sex"> {gender} </p>
+                            <p className="themeLetter" style={{marginBottom: '0'}} title="Age"> Age: {age} </p>
                         </div>
                     </div>
                 </div>
-                <button type="button" className="btn" title="Add to Cart">
+                <button type="button" className="btn" onClick={() => props.handleCart(props.speaker)}>
                     <AiOutlineShoppingCart className="icon" />
                     <span> Add to cart </span>
                 </button>
