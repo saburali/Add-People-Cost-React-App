@@ -113,10 +113,20 @@
     left: 16%;
     color: var(--themeDhak);
     transition: 0.4s all ease-in-out;
-    transition-delay: 0.4s;\
+    transition-delay: 0.4s;
 }
 
 .speakers .btn:hover .icon {
     left: 62%;
-    color: var(--themeDhak);
+    /*color: var(--themeDhak);*/
+    animation: color 10s infinite;
+}
+
+@keyframes color {
+    0% {
+        color: var(--themeDhak);
+    }
+    100% {
+        color: #fff;
+    }
 }
