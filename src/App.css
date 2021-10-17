@@ -33,3 +33,31 @@ body {
         width: 1400px;
     }
 }
+
+.themeLetter:first-letter {
+    color: var(--themeColor);
+}
+
+/* Button */
+.btn {
+    transition: 0.4s all ease-in-out;
+    display: block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    user-select: none;
+    border: 0;
+    padding: 8px 10px 6px 10px;
+    font-size: 1rem;
+    width: 100%;
+    color: #fff;
+    line-height: 1.5;
+    border-radius: .25rem;
+    background-color: var(--themeColor);
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--themeDhak);
+}
