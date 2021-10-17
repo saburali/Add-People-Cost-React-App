@@ -8,7 +8,7 @@ const Speaker = () => {
     //   JSON API CALL
     const [speaker, setSpeaker] = useState([]);
     useEffect(() => {
-        fetch("https://pro-img.saburali.me/programming-hero/tech-conference/fakeUserData.json")
+        fetch("fakeUserData.json")
             .then((res) => res.json())
             .then((data) => setSpeaker(data));
     }, []);

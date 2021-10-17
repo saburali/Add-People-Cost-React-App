@@ -35,3 +35,18 @@
 .header h3:nth-child(3) {
     text-align: right;
 }
+
+/* Scroll Down */
+.scrollNav .header .logo img {
+    height: 46px;
+    margin-top: 5px;
+    top: 0;
+}
+.scrollNav .header {
+    top: -80px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    position: fixed;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
