@@ -1,0 +1,37 @@
+.header {
+    font-size: 20px;
+    margin-top: 80px;
+    color: white;
+    background-color: var(--themeColor);
+}
+
+.header .app-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.header h3:nth-child(1) {
+    text-align: left;
+}
+
+.header .logo {
+    text-align: center;
+    position: relative;
+}
+
+.header .logo img {
+    height: 150px;
+    margin-bottom: -4px;
+    border-radius: 50%;
+    position: absolute;
+    top: -75px;
+    padding: 10px;
+    left: 50%;
+    transition: 0.4s all ease-in-out;
+    background-color: #ffffff;
+    transform: translateX(-50%);
+}
+
+.header h3:nth-child(3) {
+    text-align: right;
+}
