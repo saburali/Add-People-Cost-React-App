@@ -1,5 +1,6 @@
 import React from 'react';
 import './speaker.css';
+import {AiOutlineShoppingCart} from "react-icons/all";
 
 const Speaker = () => {
     return (
@@ -40,8 +41,8 @@ const Speaker = () => {
                         </div>
                     </div>
                     <button type="button" className="btn" title="Add to Cart">
-                        {/*<img src={cart} alt=""/>*/}
-                        Add to cart
+                        <AiOutlineShoppingCart className="icon" />
+                        <span> Add to cart </span>
                     </button>
                 </div>
             </div>
@@ -81,7 +82,7 @@ const Speaker = () => {
                         </div>
                     </div>
                     <button type="button" className="btn" title="Add to Cart">
-                        {/*<img src={cart} alt=""/>*/}
+                        <AiOutlineShoppingCart className="icon" />
                         Add to cart
                     </button>
                 </div>
@@ -122,7 +123,7 @@ const Speaker = () => {
                         </div>
                     </div>
                     <button type="button" className="btn" title="Add to Cart">
-                        {/*<img src={cart} alt=""/>*/}
+                        <AiOutlineShoppingCart className="icon" />
                         Add to cart
                     </button>
                 </div>
@@ -163,7 +164,7 @@ const Speaker = () => {
                         </div>
                     </div>
                     <button type="button" className="btn" title="Add to Cart">
-                        {/*<img src={cart} alt=""/>*/}
+                        <AiOutlineShoppingCart className="icon" />
                         Add to cart
                     </button>
                 </div>

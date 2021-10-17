@@ -59,7 +59,7 @@
     font-size: 48px;
     height: 50px;
     align-self: center;
-    padding-top: 15px;
+    padding-top: 10px;
 }
 
 .speakers .media {
@@ -104,4 +104,19 @@
     -webkit-line-clamp: 1;
     text-overflow: ellipsis;
     -webkit-box-orient: vertical;
+}
+
+.speakers .icon {
+    font-size: 60px;
+    position: absolute;
+    top: -18px;
+    left: 16%;
+    color: var(--themeDhak);
+    transition: 0.4s all ease-in-out;
+    transition-delay: 0.4s;\
+}
+
+.speakers .btn:hover .icon {
+    left: 62%;
+    color: var(--themeDhak);
 }
