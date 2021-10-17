@@ -27,10 +27,10 @@ const SingleSpeaker = (props) => {
                         <h5 className="themeLetter card-contact"> Email -  </h5>
                     </div>
                     <div>
-                        <h5 className="card-contact themeLetter" title={birthday}> {birthday} </h5>
-                        <h5 className="card-contact themeLetter" title={phone}> {phone} </h5>
-                        <h5 className="card-contact themeLetter" title={address}> {address} </h5>
-                        <h5 className="card-contact themeLetter" title={email}> {email} </h5>
+                        <h5 className="card-contact" title={birthday}> {birthday} </h5>
+                        <h5 className="card-contact" title={phone}> {phone} </h5>
+                        <h5 className="card-contact" title={address}> {address} </h5>
+                        <h5 className="card-contact" title={email}> {email} </h5>
                     </div>
                 </div>
                 <div className="media">
