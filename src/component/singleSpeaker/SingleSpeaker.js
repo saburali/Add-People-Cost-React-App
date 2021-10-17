@@ -5,7 +5,7 @@ import {AiOutlineShoppingCart} from "react-icons/all";
 const SingleSpeaker = (props) => {
 
     // Destructuring Person
-    const { age, name, position, email, gender, phone, birthday, Salary, address, photo } = props.speaker;
+    const { age, name, position, email, gender, phone, birthday, salary, address, photo } = props.speaker;
 
     return (
         <div className="card mb-4">
@@ -34,7 +34,7 @@ const SingleSpeaker = (props) => {
                     </div>
                 </div>
                 <div className="media">
-                    <h2 className="align-self-center mr-3 price" title=""> ${Salary} </h2>
+                    <h2 className="align-self-center mr-3 price" title=""> ${salary} </h2>
                     <div className="media-body">
                         <div style={{width: '90px', textAlign: 'left'}}>
                             <p className="themeLetter" title="Sex"> {gender} </p>
