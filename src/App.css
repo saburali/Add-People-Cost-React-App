@@ -57,7 +57,6 @@ body {
     width: 100%;
     color: #fff;
     line-height: 1.5;
-    border-radius: .25rem;
     position: relative;
     background-color: var(--themeColor);
 }
